@@ -1,8 +1,10 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", regular;
   font-size: 16px;
+  color: 4A4A4A;
+  line-height: 1.6;
 }
 
 .main-content {
@@ -26,6 +28,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -41,16 +44,20 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 999;
 }
 
 header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  height: 2rem;
+
 }
 
 header .logo {
   flex: 1;
+  margin-left: 30px;
 }
 
 header nav ul {
@@ -71,6 +78,7 @@ nav a {
 header .icon {
   width: 1rem;
   padding-left: .75rem;
+  margin-right: 30px;
 }
 
 header .mobile {
@@ -117,6 +125,10 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -124,6 +136,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 170px;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -142,13 +156,16 @@ header .mobile {
 #sign-up-cta h2 {
   font-size: 2.25rem;
 }
-
+#sign-up-cta span{
+  margin-top: 12px;
+}
 #sign-up-cta span strong {
   font-weight: bold;
 }
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  margin-top: 32px;
 }
 
 #sign-up-cta .striking {
@@ -157,7 +174,7 @@ header .mobile {
 }
 
 #sign-up-cta .button {
-  margin-top: 1.625rem;
+  margin-top: 26px;
   padding: 1.25rem 7.25rem;
 }
 
@@ -225,11 +242,12 @@ header .mobile {
 
 .feature .image-container {
   width: 90%;
-  height: 65%;
+  height: auto;
   margin: 0 auto;
 }
 
 .feature h2 {
+  margin-top: 40px;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -294,6 +312,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -301,6 +320,7 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
+    margin-top: 30px;
   }
 
   #filters-section .content {
@@ -334,17 +354,23 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
+#quotes-section .center{
+  padding: 80px 0;
+
+}
 #quotes-section content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
+  font-size: 30px;
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+
 }
 
 #quotes-section quote-citation {
